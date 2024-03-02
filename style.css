@@ -102,6 +102,7 @@ textarea {
 .buttons {
   display: flex;
   justify-content: space-evenly;
+  height: 7vh;
 }
 button {
   font-family: monospace;
@@ -145,5 +146,8 @@ button:hover {
   }
   .exp {
     width: 80vw;
+  }
+  .form{
+
   }
 }
