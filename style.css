@@ -90,6 +90,7 @@ option {
 .intrest {
   transform: scale(1.5);
   margin: 1vh;
+  color: whitesmoke;
 }
 /* .intrest:checked {
     display: block;
@@ -118,7 +119,7 @@ button {
   width: 20vw;
   border-radius: 1vh;
   font-size: 3vh;
-  transition: ease all 0.05s;
+  transition: ease all 0.2s;
 }
 button:hover {
   font-size: 4vh;
@@ -132,22 +133,4 @@ button:hover {
   );
   font-weight: bolder;
 }
-@media screen and (max-width: 768px) {
-  .formdiv {
-    width: 80vw;
-  }
-  .name,
-  .mail,
-  .age,
-  .extra,
-  textarea,
-  option {
-    width: 75vw;
-  }
-  .exp {
-    width: 80vw;
-  }
-  .form{
 
-  }
-}

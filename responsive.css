@@ -1,0 +1,37 @@
+@media screen and (max-width: 768px) {
+    .formdiv {
+      width: 80vw;
+      margin: 5vw 0vw;
+    }
+    .name,
+    .mail,
+    .age,
+    .extra,
+    textarea,
+    option,.exp {
+      width: 75vw;
+      height: 7vw;
+      font-size: 3vw;
+    }
+    .exp {
+      width: 80vw;
+    }
+    .form{
+        font-size: 5vw;
+    }
+    i{
+        font-size: 3vw;
+    }
+    .field,.intrest{
+        transform: scale(1);
+    }
+    button,.button{
+        height: 7vw;
+        font-size: 3vw;
+        margin:0.5vh 0.5vw;
+    }
+    button:hover{
+        font-size: 4vw;
+        margin: 0vh 0.5vw;
+    }
+  }
