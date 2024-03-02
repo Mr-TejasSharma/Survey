@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url(assets/peakpx.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+}
+.heading {
+  padding: 1vh;
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 111, 0);
+  font-family: lucida handwriting;
+  font-size: 3.5vw;
+}
+.formdiv {
+  display: flex;
+  justify-content: left;
+  padding: 2vw;
+  margin: 5vh 0vh;
+  width: 50vw;
+  border-radius: 2vh;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 10px 10px 50px rgba(255, 111, 0, 0.482);
+}
+.form {
+  background: transparent;
+  font-size: 5vh;
+}
+label {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  color: wheat;
+}
+i,
+b {
+  color: rgb(255, 111, 0);
+}
+i {
+  font-size: 3vh;
+}
+::placeholder {
+  color: whitesmoke;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: rgb(255, 111, 0);
+}
+.name,
+.mail,
+.age,
+.extra,
+textarea,
+.exp,
+option {
+  background: transparent;
+  font-family: monospace;
+  color: whitesmoke;
+  margin: 1vh 0vh;
+  height: 7vh;
+  width: 47vw;
+  border-radius: 1vh;
+  padding: 0vw 2vw;
+  font-size: 3vh;
+  outline: 0;
+  border: none;
+  border-bottom: 2px solid rgb(255, 111, 0);
+  border-left: 2px solid rgb(255, 111, 0);
+}
+option {
+  background-color: rgba(0, 0, 0, 0.667);
+}
+.exp {
+  width: 51vw;
+}
+.extra {
+  display: block;
+}
+.field,
+.intrest {
+  transform: scale(1.5);
+  margin: 1vh;
+}
+/* .intrest:checked {
+    display: block;
+
+} */
+textarea {
+  height: 15vh;
+  resize: none;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+button {
+  font-family: monospace;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 111, 0, 0.6),
+    rgb(255, 111, 0),
+    rgba(255, 111, 0, 0.6)
+  );
+  color: aliceblue;
+  margin: 1vh 1vw;
+  height: 7vh;
+  width: 20vw;
+  border-radius: 1vh;
+  font-size: 3vh;
+  transition: ease all 0.05s;
+}
+button:hover {
+  font-size: 4vh;
+  margin: 0vh 1vw;
+  color: aliceblue;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 111, 0),
+    rgba(255, 111, 0, 0.7),
+    rgb(255, 111, 0)
+  );
+  font-weight: bolder;
+}
+@media screen and (max-width: 768px) {
+  .formdiv {
+    width: 80vw;
+  }
+  .name,
+  .mail,
+  .age,
+  .extra,
+  textarea,
+  option {
+    width: 75vw;
+  }
+  .exp {
+    width: 80vw;
+  }
+}

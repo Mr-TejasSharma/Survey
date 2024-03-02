@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/questionnaire.png"
+      type="image/x-icon"
+    />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="heading"><h1>Survey Form</h1></div>
+      <div class="formdiv">
+        <form action="index.html" class="form">
+          <label for="name">Name<b>*</b> : </label><br />
+          <input
+            type="text"
+            class="name"
+            placeholder="Enter Your Name....."
+            title="Your Name"
+            required
+          /><br />
+
+          <label for="mail">E-mail<b>*</b> : </label><br />
+          <input
+            type="email"
+            class="mail"
+            placeholder="Enter Your E-mail....."
+            title="Your E-mail"
+            required
+          /><br />
+
+          <label for="Age">Age : <i>(optional)</i> </label><br />
+          <input
+            type="number"
+            class="age"
+            placeholder="Enter Your Age....."
+            title="Your Age"
+          /><br />
+
+          <label for="exp"
+            >Which option describes you best as a programmer?<b>*</b></label
+          ><br />
+          <select
+            class="exp"
+            name="experience"
+            title="Your Experience"
+            required
+          >
+            <option value="">Select Option</option>
+            <option value="new">I am a newbie.</option>
+            <option value="just">
+              I know HTML and CSS and/or want to learn programming language.
+            </option>
+            <option value="3m">
+              I have been learning programming language for 3 month
+            </option>
+            <option value="1y">I have been programing for about a year.</option>
+            <option value="25y">I have been programing for 2-5 years.</option>
+            <option value="m5y">
+              I have been programing for more than 5 years.
+            </option>
+            <br /></select
+          ><br />
+
+          <label for="field"
+            >Which web development area would like to focus ?<b>*</b></label
+          ><br />
+          <input
+            type="radio"
+            name="field"
+            class="field"
+            required
+          />FrontEnd<br />
+          <input
+            type="radio"
+            name="field"
+            class="field"
+            required
+          />BackEnd<br />
+          <input type="radio" name="field" class="field" required />Full
+          Stack<br />
+
+          <label for="intrest"
+            >Which topics are you intrested in ?<b>*</b
+            ><i>(Check all that apply)</i></label
+          ><br />
+          <input type="checkbox" class="intrest" />HTML and CSS<br />
+          <input type="checkbox" class="intrest" />JavaScript<br />
+          <input type="checkbox" class="intrest" />Python<br />
+          <input type="checkbox" class="intrest" />Go<br />
+          <input type="checkbox" class="intrest" />Rust<br />
+          <input type="checkbox" class="intrest" />C#<br />
+          <input type="checkbox" class="intrest" />Other<i>(please specify)</i
+          ><br />
+          <input
+            type="text"
+            class="extra"
+            placeholder="Please Specify Here"
+            title="Your Other languages"
+          />
+
+          <label for="comment"
+            >Any comment or suggestions ?<i>(optional)</i></label
+          ><br />
+          <textarea
+            rows="4"
+            column="50"
+            placeholder="Write here"
+            title="Your suggestions"
+          ></textarea>
+          <i
+            ><input
+              type="checkbox"
+              class="intrest"
+              title="Check for security perpose"
+              required
+            />I hereby declare that whatever is told above is correct.</i
+          ><br />
+          <div class="buttons">
+            <button class="submit">SUBMIT</button>
+            <button class="submit">RESET</button><br />
+          </div>
+          <i
+            ><b>*</b>Only questions marked with an asterisk (<b>*</b>) are
+            required.</i
+          >
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
